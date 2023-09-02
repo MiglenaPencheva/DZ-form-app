@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --teal-grey: #608d9e;
+    --teal-light-grey: #739aa9;
+    --vermilion: #fd8645;
+    --vermilion-white: #ffefe6;
+    --vermilion-extra: #fff6f1;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    color: var(--teal-grey);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 4px 4px var(--teal-light-grey);
+}
+
+h3 {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.9rem;
+    background-color: var(--vermilion-white);
+}
+
+.getDataSection {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#eventSection,
+#personalSection,
+#resultSection {
+    padding: 2rem 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    border: 1px solid var(--teal-grey);
+    border-radius: 18px;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sectionLabel {
+    position: absolute;
+    padding: 0.3rem;
+    top: -18px;
+    left: 24px;
+    font-size: 1.2rem;
+    background-color: white;
+    font-weight: 600;
+}
+
+#resultSection {
+    margin-top: 2rem;
+}
+
+input {
+    margin: 0 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: var(--teal-grey);
+    border: 1px solid var(--teal-grey);
+    transition-duration: 0.2s;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 200;
+    accent-color: var(--teal-grey);
+}
+
+input:focus {
+    background: var(--vermilion-white);
+    box-shadow: 1px 1px 3px var(--teal-grey);
+}
+
+.messageSpan {
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 4rem;
+    padding: 0.7rem;
+    /* border: 1px solid var(--vermilion-white); */
+    /* box-shadow: 1px 1px 3px var(--teal-grey); */
+    border-radius: 10px;
+    color: var(--vermilion-white);
+    font-size: 0.9rem;
+    background-color: var(--teal-light-grey);
+}
+
+/* ---------------- event ------------------*/
+#laneInput {
+    width: 70px;
+}
+
+#sigmaInput {
+    width: 100px;
+}
+#eventDateInput {
+    display: none;
+    width: 160px;
+}
+
+/* ---------------- personal ------------------*/
+#namesInput {
+    width: 280px;
+}
+
+#birthPlaceInput {
+    width: 150px;
+}
+#nationalityInput {
+    width: 150px;
+}
+#passNumberInput {
+    width: 150px;
+}
+
+#flightInput {
+    width: 100px;
+}
+#destinationInput {
+    width: 200px;
+}
+#hospitalInput {
+    width: 280px;
+}
+#placeInput {
+    width: 120px;
+}
+
+/* ---------------- result ------------------*/
+#backgroundInput {
+    width: 60px;
+}
+
+#doseInput {
+    width: 100px;
+}
+
+#prdInput {
+    width: 40px;
+}
+
+#eventInput {
+    width: 70px;
+}
+
+#percentInput {
+    width: 60px;
+}
+
+/* ----------------- text results --------------------*/
+
+#buttonSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+}
+#getDataBtn {
+    width: 160px;
+}
+#clearBtn {
+    width: 160px;
+    align-self: flex-end;
+    background: none;
+    color: var(--teal-grey);
+}
+#clearBtn:hover {
+    background: var(--vermilion-white);
+}
+
+button {
+    margin: 0;
+    padding: 0.5rem 0.2rem 0.6rem 0.2rem;
+    width: 100px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--vermilion-white);
+    background: var(--teal-grey);
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid var(--teal-grey);
+}
+
+button:hover {
+    color: var(--teal-grey);
+    background: var(--vermilion-white);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#comentarSection,
+#dzSection,
+#protokolSection {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    gap: 1rem;
+    border: 1px solid var(--teal-grey);
+    border-radius: 18px;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+#comentarSection p {
+    margin: 0;
+    padding: 0;
+    width: 340px;
+}
+#dzSection p {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+#protokolSection p {
+    margin: 0;
+    padding: 0;
+    width: 230px;
+}
