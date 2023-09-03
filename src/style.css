@@ -220,9 +220,9 @@ button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-#comentarSection,
+#commentSection,
 #dzSection,
-#protokolSection {
+#protocolSection {
     padding: 2rem 1.5rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -234,18 +234,18 @@ button:hover {
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.19);
 }
 
-#comentarSection p {
+#commentSection p {
     margin: 0;
     padding: 0;
-    width: 340px;
+    width: 320px;
 }
 #dzSection p {
     margin: 0;
     padding: 0;
-    width: 500px;
+    width: 480px;
 }
-#protokolSection p {
-    margin: 0;
+#protocolSection p {
+    margin: 1rem 0 0 0;
     padding: 0;
-    width: 230px;
+    width: 350px;
 }
